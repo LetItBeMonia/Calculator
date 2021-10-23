@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(141, 235, 123),rgb(130, 202, 224));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Cairo', sans-serif;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+}
+
+#wrapper-grid-calculator{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* 
+Grid-lines names info:
+v - vertical
+h - horizontal
+*/
+#grid-calculator{
+    display: grid;
+    grid-template-columns: [start_line_h] 1fr [after_7] 1fr [after_8] 1fr [after_9] 2fr [end_line_h];
+    grid-template-rows: [start_line_v] 1fr [under_display] 1fr [under_7] 1fr [under_4] 1fr [under_1] 1fr [under_0] 1fr [end_line_v];
+
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(121, 121, 121);
+
+    margin: 0;
+    padding: 20px;
+    width: 40vw;
+    height: 75vh;
+    min-width: 500px;
+    min-height: 350px;
+
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.1);
+}
+
+#grid-calculator > button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Cairo', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(122, 122, 122);
+
+    min-height: 30px;
+}
+
+
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(150, 150, 150, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(150, 150, 150, 0.5);
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.item:hover{
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(124, 124, 124, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(124, 124, 124, 0.5);
+    scale: 0.95;
+    transform: scale(0.95);
+}
+
+.equal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(150, 150, 150, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(150, 150, 150, 0.5);
+    background: rgba(180, 255, 158, 0.7);
+    transition: all 0.2s ease-in-out;
+}
+
+.equal:hover{
+    background: rgba(180, 255, 158, 0.85);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(124, 124, 124, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(124, 124, 124, 0.5);
+    scale: 0.95;
+    transform: scale(0.95);
+}
+
+.display{
+    grid-column: start_line_h / span 3;
+    margin: 5px;
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 8px;
+    border:  1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 2px 2px 10px rgb(0, 0, 0, 0.1),
+                inset -2px -2px 15px rgba(255, 255, 255, 0.25);
+    box-shadow: inset 2px 2px 10px rgb(0, 0, 0, 0.1),
+                inset -2px -2px 15px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 36px;
+    font-weight: 400;
+}   
+
+.display .previous-number{
+    font-size: 20px;
+    color:rgb(165, 165, 165);
+}
+
+.display .actual-number{
+    font-size: 26px;
+    color: rgb(122, 122, 122);
+}
+
+
+@media (max-width: 910px) {
+    h2{
+        font-size: 25px;
+    }
+    #grid-calculator{
+        width: 80vw;
+        min-width: 400px;
+        max-width: 500px;
+    }
+    #grid-calculator > button{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    h2 > .header-1::after {
+        content: '\A';
+		white-space: pre;
+    }
+    #grid-calculator{
+        width: 80vw;
+        min-width: 300px;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 300px){
+    h2{
+        font-size: 19px;
+    }
+    #grid-calculator{
+        width: 100vw;
+        min-width: 220px; 
+        height: 60vh;
+    }
+    #grid-calculator > button{
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 700px) {
+    #grid-calculator > button{
+        font-size: 20px;
+    }
+}
