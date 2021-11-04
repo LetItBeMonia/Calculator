@@ -10,4 +10,4 @@ Calculator is one of the first projects for my programming portfolio.
 # Important
 Notice that not all of the equations will have a proper result since JavaScript has a specific notation system for numbers. Especially operations with floating point numbers are
 fragile.
-- events with a point not entirely handled yet.
+- events with a point button not entirely handled yet.
