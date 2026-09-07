@@ -1,5 +1,5 @@
 # Introduction
-My first personal JavaScript project, created to practice my HTML, CSS, JavaScript and problem-solving skills by building a functional calculator from scratch.
+My first personal JavaScript project, created to practice my HTML, CSS, JavaScript and problem-solving skills by building a calculator from scratch.
 
 # Technologies & concepts used
 ## Technologies
