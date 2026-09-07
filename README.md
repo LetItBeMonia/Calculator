@@ -1,5 +1,5 @@
 # Introduction
-My first personal JavaScript project. The purpose of the project was to practice my HTML, CSS, and JavaScript, as well as problem-solving skills by applying them to a real-world project: building a functional calculator from scratch.
+My first personal JavaScript project, created to practice my HTML, CSS, JavaScript and problem-solving skills by building a functional calculator from scratch.
 
 # Technologies & concepts used
 ## Technologies
