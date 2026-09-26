@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es2025",
+    "lib": ["dom", "ES2025"]
+    // "strict": true
+  },
+  "include": ["calculator.ts"]
+}

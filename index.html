@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="keyword" />
+    <meta name="description" />
+    <meta name="title" />
+    <title>Calculator. By Monika Kulig.</title>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <h2>
+      <span class="header-1">Simple Calculator. </span>
+      <span class="header-2">Made by Monika Kulig.</span>
+    </h2>
+
+    <div id="calculator-grid-wrapper">
+      <div id="calculator-grid">
+        <!-- row 1 -->
+        <div class="display-wrapper">
+          <div data-info-tooltip class="info-tooltip"></div>
+          <div class="display">
+            <div data-previous-number class="previous-number"></div>
+            <div data-actual-number class="actual-number"></div>
+          </div>
+        </div>
+        <button data-all-clear class="clear">AC</button>
+        <button data-clear class="clear">⬅</button>
+        <!-- row 2 -->
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operator="÷">÷</button>
+        <!-- row 3 -->
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operator="×">×</button>
+        <!-- row 4 -->
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-operator="-">-</button>
+        <!-- row 5 -->
+        <button data-comma=".">.</button>
+        <button data-number="0">0</button>
+        <button data-number="00">00</button>
+        <button data-operator="+">+</button>
+        <!-- row 6 -->
+        <button data-operator="%">%</button>
+        <button data-one-operand-operator="√">√</button>
+        <button data-operator="^">^</button>
+        <button data-result class="equals">=</button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
