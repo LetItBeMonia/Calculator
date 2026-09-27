@@ -1,4 +1,5 @@
 # </> Calculator
+A calculator web application made with TypeScript.
 
 ## ⌨️ Tech-stack used:
 `TypeScript` `HTML5` `CSS3` 
