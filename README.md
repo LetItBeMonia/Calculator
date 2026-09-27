@@ -16,8 +16,10 @@ TypeScript | HTML5 | CSS3
 - performing one-operand mathematical operation:
   - square root extraction (√)
 
-## 🔍 Concepts implemented:
+## 📖 Concepts implemented:
 - responsive web design
 - clean code principles
 - CSS animations
 - UI design
+
+# 🔍 Application overview
