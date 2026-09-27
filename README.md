@@ -1,7 +1,7 @@
 # </> Calculator
 
 ## ⌨️ Tech-stack used:
-TypeScript | HTML5 | CSS3 
+`TypeScript` `HTML5` `CSS3` 
 
 ## 🚀 Functionalities:
 - two-part display (one displaying last performed operation and second for displaying number input)
