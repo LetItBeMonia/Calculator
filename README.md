@@ -1,10 +1,10 @@
 # </> Calculator
 A calculator web application made with TypeScript.
 
-## ⌨️ Tech-stack used:
+## ⌨️ Technologies:
 `TypeScript` `HTML5` `CSS3` 
 
-## 🚀 Functionalities:
+## 🚀 Features:
 - two-part display (one displaying last performed operation and second for displaying number input)
 - performing two-operands mathematical operations, such as:
   - addition (+),
