@@ -16,11 +16,13 @@ A calculator web application made with TypeScript.
 - performing one-operand mathematical operation:
   - square root extraction (√)
 
-## 📖 Concepts implemented:
+## 📖 Implemented concepts:
 - responsive web design
 - clean code principles
 - CSS animations
 - UI design
+
+-------------------------------------------------------------------------------------------------------
 
 ## 🔍 Application overview
 ### Example of two-operand operation:
