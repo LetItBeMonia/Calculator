@@ -2,7 +2,7 @@
 A calculator web application made with TypeScript.
 
 ## ⌨️ Technologies:
-`TypeScript` `HTML5` `CSS3` 
+`TypeScript` `vite` `HTML5` `CSS3`
 
 ## 🚀 Features:
 - two-part display (one displaying last performed operation and second for displaying number input)
