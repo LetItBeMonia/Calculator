@@ -4,7 +4,7 @@ My first personal JavaScript project. The purpose of the project was to practice
 ## Tech-stack used:
 TypeScript | HTML5 | CSS3 
 
-## Functionalities:
+## 🚀 Functionalities:
 - two-part display (one displaying last performed operation and second for displaying number input)
 - performing two-operands mathematical operations, such as:
 -   addition (+),
