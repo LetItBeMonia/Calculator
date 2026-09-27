@@ -30,4 +30,4 @@ TypeScript | HTML5 | CSS3
 <img width="308" height="416" alt="root" src="https://github.com/user-attachments/assets/8c02667a-108d-4208-8997-26b19b09a9de" />
 
 ### Responsiveness:
-<img width="789" height="430" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" />
+<img width="631" height="344" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" />
