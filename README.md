@@ -1,10 +1,10 @@
 # </> Calculator
 A calculator web application made with TypeScript.
 
-## ⌨️ Technologies:
+## ⌨️ Technologies
 `TypeScript` `vite` `HTML5` `CSS3`
 
-## 🚀 Features:
+## 🚀 Features
 - two-part display (one displaying last performed operation and second for displaying number input)
 - performing two-operands mathematical operations, such as:
   - addition (+),
@@ -16,11 +16,18 @@ A calculator web application made with TypeScript.
 - performing one-operand mathematical operation:
   - square root extraction (√)
 
-## 📖 Implemented concepts:
+## 📖 Implemented concepts
 - responsive web design
 - clean code principles
 - CSS animations
 - UI design
+
+## 🚦 Running the Project
+Requirements: VSC Live Server extension
+1. Clone the repository
+2. Run: `npx tsc --watch`
+3. Run Live Server in VSC
+4. Open `http://localhost:5500/` in your browser
 
 -------------------------------------------------------------------------------------------------------
 
