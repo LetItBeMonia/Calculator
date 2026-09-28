@@ -44,7 +44,8 @@ Notice that not all of the mathematical operations in the calculator will have a
 ### Responsiveness:
 <img width="631" height="344" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" /></br>
 
-https://github.com/user-attachments/assets/b2741f4f-8f44-4793-8831-f6f0208330cc
+https://github.com/user-attachments/assets/7558deaf-b7f6-43ba-b51b-d6a3e4cbb262
+
 
 ## 🎬 Video Short Overview
-[Uploading 2026-09-28 12-36-11.mp4…](https://github.com/user-attachments/assets/79f59457-133b-44aa-aae8-4c76572a0c98)
+https://github.com/user-attachments/assets/1f6a23e8-6967-4f54-aa8e-d986bd864fd1
