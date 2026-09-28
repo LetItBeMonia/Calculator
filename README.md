@@ -29,6 +29,9 @@ Requirements: VSC Live Server extension
 3. Run Live Server in VSC
 4. Open `http://localhost:5500/` in your browser
 
+## 🚩 Important
+Notice that not all of the mathematical operations in the calculator will have a proper result since JavaScript has a specific notation system for numbers. In particular results of operations on floating point numbers may differ from an actual mathematical result of these operations.
+
 -------------------------------------------------------------------------------------------------------
 
 ## 🔍 Application overview
@@ -39,4 +42,9 @@ Requirements: VSC Live Server extension
 <img width="308" height="416" alt="root" src="https://github.com/user-attachments/assets/8c02667a-108d-4208-8997-26b19b09a9de" />
 
 ### Responsiveness:
-<img width="631" height="344" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" />
+<img width="631" height="344" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" /></br>
+
+https://github.com/user-attachments/assets/b2741f4f-8f44-4793-8831-f6f0208330cc
+
+## 🎬 Video Short Overview
+[Uploading 2026-09-28 12-36-11.mp4…](https://github.com/user-attachments/assets/79f59457-133b-44aa-aae8-4c76572a0c98)
