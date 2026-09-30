@@ -262,52 +262,77 @@ const checkBottomDisplayContentForOperator = (): boolean => {
 const checkBothDisplaysContentforOperator = (): boolean => {
   const twoOperandsOperator = isOperator(topDisplay);
 
-  if (topDisplay.slice(-1) === twoOperandsOperator) {
-    const first = topDisplay.split(twoOperandsOperator);
+  if (topDisplay.includes(twoOperandsOperator)) {
+    if (topDisplay.slice(-1) === twoOperandsOperator) {
+      const first = topDisplay.split(twoOperandsOperator);
 
-    if (topDisplay.includes("√") && bottomDisplay.includes("√")) {
-      const tempFirstOperand = Math.sqrt(parseFloat(topDisplay.slice(1, -1)));
+      if (topDisplay.includes("√") && bottomDisplay.includes("√")) {
+        const tempFirstOperand = Math.sqrt(parseFloat(topDisplay.slice(1, -1)));
 
-      if (bottomDisplay.slice(1) === "") {
-        showIncompleteEquationMessage();
-        return false;
-      } else {
-        const tempSecondOperand = Math.sqrt(parseFloat(bottomDisplay.slice(1)));
-        assignOperands({ first: tempFirstOperand, second: tempSecondOperand });
+        if (bottomDisplay.slice(1) === "") {
+          showIncompleteEquationMessage();
+          return false;
+        } else {
+          const tempSecondOperand = Math.sqrt(
+            parseFloat(bottomDisplay.slice(1)),
+          );
+          assignOperands({
+            first: tempFirstOperand,
+            second: tempSecondOperand,
+          });
+          operation = twoOperandsOperator;
+          return true;
+        }
+      }
+
+      if (topDisplay.includes("√")) {
+        const tempFirstOperand = Math.sqrt(parseFloat(topDisplay.slice(1, -1)));
+        assignOperands({
+          first: tempFirstOperand,
+          second: parseFloat(bottomDisplay),
+        });
         operation = twoOperandsOperator;
         return true;
       }
-    }
 
-    if (topDisplay.includes("√")) {
-      const tempFirstOperand = Math.sqrt(parseFloat(topDisplay.slice(1, -1)));
+      if (bottomDisplay.includes("√")) {
+        if (bottomDisplay.slice(1) !== "") {
+          bottomDisplay = Math.sqrt(
+            parseFloat(bottomDisplay.slice(1)),
+          ).toString();
+        } else {
+          showIncompleteEquationMessage();
+          return false;
+        }
+      }
+
       assignOperands({
-        first: tempFirstOperand,
+        first: parseFloat(first[0]),
         second: parseFloat(bottomDisplay),
       });
       operation = twoOperandsOperator;
       return true;
-    }
-
-    if (bottomDisplay.includes("√")) {
-      if (bottomDisplay.slice(1) !== "") {
-        bottomDisplay = Math.sqrt(
-          parseFloat(bottomDisplay.slice(1)),
-        ).toString();
-      } else {
-        showIncompleteEquationMessage();
-        return false;
+    } else if (!topDisplay.includes("√")) {
+      if (operation === "√") {
+        assignOperands({ second: parseFloat(bottomDisplay) });
+        return true;
       }
+      showInfoMessage("No operation to perform.");
+      return false;
+    } else {
+      if (topDisplay.includes("√")) {
+        assignOperands({ second: parseFloat(bottomDisplay) });
+        operation = "√";
+        return true;
+      }
+      showInfoMessage("No operation to perform.");
+      return false;
     }
-
-    assignOperands({
-      first: parseFloat(first[0]),
-      second: parseFloat(bottomDisplay),
-    });
-    operation = twoOperandsOperator;
+  } else if (topDisplay.includes("√")) {
+    assignOperands({ second: parseFloat(bottomDisplay) });
+    operation = "√";
     return true;
   } else {
-    showInfoMessage("No operation to perform.");
     return false;
   }
 };
@@ -386,7 +411,7 @@ const performOperation = () => {
     if (operation === "√") {
       if (topDisplay.includes("√")) {
         updateDisplayVariables({
-          topNr: `${topDisplay}`,
+          topNr: `√${bottomDisplay}`,
           botNr: result.toString(),
           oper: "",
         });
@@ -470,6 +495,8 @@ const addCharacterToDisplay = (char: string) => {
 // Determines behaviour of root button
 const checkRootConditions = () => {
   if (topDisplay !== "" && bottomDisplay !== "") {
+    operation = "√";
+    performOperation();
     return;
   }
   if (topDisplay !== "" && bottomDisplay === "") {
