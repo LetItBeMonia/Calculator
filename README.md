@@ -1,8 +1,11 @@
 # </> Calculator
-A calculator web application made with TypeScript.
+TypeScript calculator web application.
 
 ## ⌨️ Technologies
-`TypeScript` `vite` `HTML5` `CSS3`
+- TypeScript
+- vite
+- HTML5
+- CSS3
 
 ## 🚀 Features
 - two-part display (one displaying last performed operation and second for displaying number input)
@@ -42,10 +45,6 @@ Notice that not all of the mathematical operations in the calculator will have a
 <img width="231" height="312" alt="root" src="https://github.com/user-attachments/assets/8c02667a-108d-4208-8997-26b19b09a9de" />
 
 ### Responsiveness:
+<p align="center">
 <img width="505" height="275" alt="responsiveness" src="https://github.com/user-attachments/assets/c0183a25-0e71-4813-9cf3-72cefba23da7" /></br>
-
-https://github.com/user-attachments/assets/7558deaf-b7f6-43ba-b51b-d6a3e4cbb262
-
-
-## 🎬 Video Short Overview
-https://github.com/user-attachments/assets/1f6a23e8-6967-4f54-aa8e-d986bd864fd1
+</p>
